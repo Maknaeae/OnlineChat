@@ -35,6 +35,7 @@ body{
 
 .form form .field{
     display: flex;
+    position: relative;
     flex-direction: column;
     margin-bottom: 24px;
 }
@@ -79,6 +80,17 @@ body{
 .form .link a:hover{
     text-decoration: underline;
 }
+
+.form .field .icon{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+}
+
+
 
 
 
