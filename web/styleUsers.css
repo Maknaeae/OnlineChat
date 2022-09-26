@@ -8,50 +8,57 @@
 body{
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-left: 0.5%;
+    justify-content: center;
+    padding: 0.5%;
     min-height: 100vh;
     background: #cacaca;
 }
-.wrapper{
+.wrapperUsers{
     background: #252525 /*252525*/;
     width: 23%;
     height: 700px;
+    margin-right: 0.5%;
     border-radius: 32px;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
                 0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
-.users{
+.users, .messanger{
     padding: 25px 30px;
 }
 .users header,
-.users-list a{
+.users-list a,
+.messanger header{
     display: flex;
     align-items: center;
     padding-bottom: 20px;
     justify-content: space-between;
     border-bottom: 1px solid #cacaca;
 }
-.wrapper img{
+.wrapperUsers img,
+.wrapperMessage img{
     object-fit: cover;
     border-radius: 50%;
 }
 .users header .content,
-.users-list a .content{
+.users-list a .content,
+.messanger header .content{
     display: flex;
     align-items: center;
 }
-.users header .content img{
+.users header .content img,
+.messanger header .content img{
     height: 50px;
     width: 50px;
 }
 .users header .details,
-.users-list a .details{
+.users-list a .details,
+.messanger header .details{
     margin-left: 15px;
     color: #cacaca;
 }
 .users header .details span,
-.users-list a .details span{
+.users-list a .details span,
+.messanger header .details span{
     font-size: 18px;
     font-weight: 500;
 }
@@ -61,6 +68,7 @@ body{
     border: 1px solid #cacaca;
     border-radius: 32px;
     border-color: #cacaca;
+    color: #E4AFF7;
 }
 .users .search{
     margin: 20px 0;
@@ -104,4 +112,20 @@ body{
 }
 .users-list a .status-dot.offline{
     color: #888888;
+}
+
+.wrapperMessage{
+    background: #252525 /*252525*/;
+    justify-items: right;
+    margin-left: 0.5%;
+    width: 74%;
+    height: 700px;
+    border-radius: 32px;
+    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+                0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+
+
+.messanger header .content img{
+    justify-items: right;
 }
