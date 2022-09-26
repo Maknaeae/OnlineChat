@@ -60,7 +60,7 @@ body{
 .users-list a .details span,
 .messanger header .details span{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .users header .logout{
     background: #252525;
@@ -86,7 +86,7 @@ body{
     max-height: 525px;
     overflow-y: auto;
 }
-.users-list::-webkit-scrollbar{
+:is(.chat-box, .users-list)::-webkit-scrollbar{
     width: 0px;
 }
 .users-list a{
@@ -125,7 +125,79 @@ body{
                 0 32px 64px -48px rgba(0, 0, 0, 0.5);
 }
 
+.messanger header .content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.chat-box{
+    max-height: 535px;
+    overflow-y: auto;
+}
+.chat-box .chat{
+    margin: 16px 0;
+}
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 8px 16px;
+}
+.chat-box .outgoing{
+    display: flex;
+    /* justify-content: space-between;
+    width: 100%; */
+}
+.outgoing .details{
+    margin-left: auto;
+    max-width: calc(100% - 400px);
+}
+.outgoing .details p{
+    background: #E4AFF7;
+    color: #252525;
+    border-radius: 36px 36px 0 36px;
+}
+.chat-box .incoming{
+    display: flex;
+    align-items: flex-end;
+}
+.chat-box .incoming img{
+    height: 32px;
+    width: 32px;
+}
+.incoming .details{
+    margin-left: 10px;
+    margin-right: auto;
+    max-width: calc(100% - 400px);
+}
+.incoming .details p{
+    background: #cacaca;
+    color: #252525;
+    border-radius: 36px 36px 36px 0;
+}
 
-.messanger header .content img{
-    justify-items: right;
+.messanger .typing{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.typing input{
+    height: 32px;
+    width: calc(100% - 32px);
+    font-size: 16px;
+    border: 1px solid #cacaca;
+    padding: 0 13px;
+    border-radius: 32px 0 0 32px;
+    outline: none;
+}
+
+.typing button{
+    width: 32px;
+    border-radius: 0 32px 32px 0;
+    background: #E4AFF7;
+    color: #252525;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
