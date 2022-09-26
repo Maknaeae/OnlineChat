@@ -50,8 +50,13 @@ body{
 
 }
 
-.form form .image input{
-    font-size: 17px;
+.form form .field i{
+    position: absolute;
+    right: 15px;
+    color: #cacaca;
+    top: 50%;
+    transform: translateY(-45%);
+    cursor: pointer;
 }
 
 .form form .button input{
@@ -81,14 +86,6 @@ body{
     text-decoration: underline;
 }
 
-.form .field .icon{
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: 10px;
-    top: 12px;
-    cursor: pointer;
-}
 
 
 
